@@ -123,7 +123,7 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
 
                 CrudRoomApp.getInstance().getDataBase().mahasiswaDao().delete(data);
                 listener.onRemoveClick(data);
-                Toast.makeText(itemView.getContext(), "Berhasil Menambahkan", Toast.LENGTH_SHORT).show();
+                Toast.makeText(itemView.getContext(), "Berhasil Dihapus", Toast.LENGTH_SHORT).show();
 
             } else if (view.getId() == R.id.item_list) {
 
