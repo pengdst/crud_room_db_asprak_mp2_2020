@@ -8,5 +8,7 @@ import com.mmnuradityo.crud_room_db.database.Mahasiswa;
  * GitHub     : https://github.com/mmnuradityo
  */
 public interface DataListListener {
-    void onRemove(Mahasiswa mahasiswa);
+
+    void onRemoveClick(Mahasiswa mahasiswa);
+
 }

@@ -63,6 +63,7 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
         if (this.dataList.isEmpty()) {
             return;
         }
+
         for (int i = 0; i < dataList.size(); i++) {
             if (this.dataList.get(i).getId() == data.getId()) {
                 this.dataList.remove(i);
@@ -121,8 +122,8 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
             if (view.getId() == R.id.btn_hapus) {
 
                 CrudRoomApp.getInstance().getDataBase().mahasiswaDao().delete(data);
-                listener.onRemove(data);
-                Toast.makeText(itemView.getContext(), "Success", Toast.LENGTH_SHORT).show();
+                listener.onRemoveClick(data);
+                Toast.makeText(itemView.getContext(), "Berhasil Menambahkan", Toast.LENGTH_SHORT).show();
 
             } else if (view.getId() == R.id.item_list) {
 

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         adapter = new RvAdapter();
+
         rvListMahasiswa = findViewById(R.id.rv_list_mahasiswa);
         fabTambah = findViewById(R.id.fab_tambah_data);
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.setRemoveListener(new DataListListener() {
             @Override
-            public void onRemove(Mahasiswa mahasiswa) {
+            public void onRemoveClick(Mahasiswa mahasiswa) {
                 adapter.removeData(mahasiswa);
             }
         });
@@ -54,6 +55,5 @@ public class MainActivity extends AppCompatActivity {
         List<Mahasiswa> datas = CrudRoomApp.getInstance().getDataBase().mahasiswaDao().getAll();
         adapter.setData(datas);
     }
-
 
 }
