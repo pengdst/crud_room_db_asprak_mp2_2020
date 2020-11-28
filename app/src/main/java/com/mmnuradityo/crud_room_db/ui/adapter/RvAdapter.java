@@ -5,18 +5,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 import com.mmnuradityo.crud_room_db.CrudRoomApp;
-import com.mmnuradityo.crud_room_db.ui.activity.TambahDanUbahDataActivity;
-import com.mmnuradityo.crud_room_db.ui.common.DataListListener;
 import com.mmnuradityo.crud_room_db.R;
 import com.mmnuradityo.crud_room_db.database.Mahasiswa;
+import com.mmnuradityo.crud_room_db.ui.activity.TambahDanUbahDataActivity;
+import com.mmnuradityo.crud_room_db.ui.common.DataListListener;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -94,16 +99,27 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
 
     static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
+        private RequestOptions requestOptions;
         private TextView tvNama, tvNim;
+        private ImageView imageView;
         private Button btnHapus;
         private Mahasiswa data;
         private DataListListener listener;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
+            requestOptions = new RequestOptions()
+                    .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+                    .skipMemoryCache(false)
+                    .centerCrop()
+                    .circleCrop()
+                    .placeholder(R.drawable.ic_account)
+                    .error(R.drawable.ic_account);
+
             tvNama = itemView.findViewById(R.id.tv_nama);
             tvNim = itemView.findViewById(R.id.tv_nim);
             btnHapus = itemView.findViewById(R.id.btn_hapus);
+            imageView = itemView.findViewById(R.id.image);
 
             itemView.setOnClickListener(this);
             btnHapus.setOnClickListener(this);
@@ -115,6 +131,8 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
 
             tvNama.setText(data.getNama());
             tvNim.setText(data.getNim());
+
+            loadImage(new File(data.getGambar()));
         }
 
         @Override
@@ -134,6 +152,15 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
             }
         }
 
+        private void loadImage(File image) {
+            if (image == null) return;
+
+            Glide.with(itemView.getContext())
+                    .asBitmap()
+                    .apply(requestOptions)
+                    .load(image)
+                    .into(imageView);
+        }
     }
 
 }

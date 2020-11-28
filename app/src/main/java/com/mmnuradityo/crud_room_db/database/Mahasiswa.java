@@ -16,18 +16,22 @@ public class Mahasiswa {
     private int id = 0;
 
     @ColumnInfo(name = "nama")
-    private String nama;
+    private String nama = "";
 
     @ColumnInfo(name = "nim")
-    private String nim;
+    private String nim = "";
+
+    @ColumnInfo(name = "gambar")
+    private String gambar = "";
 
     public Mahasiswa() {
     }
 
-    public Mahasiswa(int id, String nama, String nim) {
+    public Mahasiswa(int id, String nama, String nim, String gambar) {
         this.id = id;
         this.nama = nama;
         this.nim = nim;
+        this.gambar = gambar;
     }
 
     public int getId() {
@@ -52,6 +56,14 @@ public class Mahasiswa {
 
     public void setNim(String nim) {
         this.nim = nim;
+    }
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
     }
 
 }

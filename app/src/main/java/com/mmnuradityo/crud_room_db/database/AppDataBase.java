@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase;
  * Author     : mmnuradityo
  * GitHub     : https://github.com/mmnuradityo
  */
-@Database(entities = {Mahasiswa.class}, version = 1)
+@Database(entities = {Mahasiswa.class}, version = 2)
 public abstract class AppDataBase extends RoomDatabase {
 
     public abstract MahasiswaDao mahasiswaDao();
