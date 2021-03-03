@@ -1,10 +1,12 @@
-package com.mmnuradityo.crud_room_db.database;
+package com.mmnuradityo.crud_room_db.database.dao;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
 
 import java.util.List;
 
