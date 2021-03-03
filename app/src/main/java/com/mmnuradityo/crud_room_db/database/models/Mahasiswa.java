@@ -1,4 +1,4 @@
-package com.mmnuradityo.crud_room_db.database;
+package com.mmnuradityo.crud_room_db.database.models;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
