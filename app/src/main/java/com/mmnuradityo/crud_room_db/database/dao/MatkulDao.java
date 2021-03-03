@@ -11,9 +11,11 @@ import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
 import java.util.List;
 
 /**
- * Created on : 07/11/20
- * Author     : mmnuradityo
- * GitHub     : https://github.com/mmnuradityo
+ * Created by pengdst on 03/03/2021
+ * <p>
+ * Github    : https://github.com/pengdst
+ * Gitlab    : https://gitlab.com/pengdst
+ * LinkedIn  : https://linkedin.com/in/pengdst/
  */
 @Dao
 public interface MatkulDao {
