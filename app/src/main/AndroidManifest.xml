@@ -17,17 +17,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,UnusedAttribute">
-        <activity android:name=".ui.activity.TambahUbahMatkulActivity"></activity>
-
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
 
         <activity
             android:name=".ui.activity.MainActivity"
@@ -39,8 +28,22 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.activity.ListMahasiswaActivity" />
+        <activity
             android:name=".ui.activity.TambahDanUbahMahasiswaActivity"
             android:launchMode="singleInstance" />
+        <activity android:name=".ui.activity.TambahUbahMatkulActivity"
+            android:launchMode="singleInstance" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>
