@@ -1,6 +1,6 @@
 package com.mmnuradityo.crud_room_db.ui.common;
 
-import com.mmnuradityo.crud_room_db.database.Mahasiswa;
+import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
 
 /**
  * Created on : 07/11/20

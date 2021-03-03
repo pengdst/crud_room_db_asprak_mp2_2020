@@ -17,7 +17,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.mmnuradityo.crud_room_db.CrudRoomApp;
 import com.mmnuradityo.crud_room_db.R;
-import com.mmnuradityo.crud_room_db.database.Mahasiswa;
+import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
 import com.mmnuradityo.crud_room_db.ui.activity.TambahDanUbahDataActivity;
 import com.mmnuradityo.crud_room_db.ui.common.DataListListener;
 

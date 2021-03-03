@@ -29,8 +29,8 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mmnuradityo.crud_room_db.BuildConfig;
 import com.mmnuradityo.crud_room_db.CrudRoomApp;
 import com.mmnuradityo.crud_room_db.R;
-import com.mmnuradityo.crud_room_db.database.Mahasiswa;
-import com.mmnuradityo.crud_room_db.database.MahasiswaDao;
+import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
+import com.mmnuradityo.crud_room_db.database.dao.MahasiswaDao;
 import com.mmnuradityo.crud_room_db.ui.common.DialogImageOptionsListener;
 import com.mmnuradityo.crud_room_db.ui.dialog.CustomDialogImageOptions;
 

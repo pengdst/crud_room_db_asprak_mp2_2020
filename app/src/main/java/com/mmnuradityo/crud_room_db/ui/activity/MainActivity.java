@@ -12,7 +12,7 @@ import com.mmnuradityo.crud_room_db.CrudRoomApp;
 import com.mmnuradityo.crud_room_db.ui.adapter.RvAdapter;
 import com.mmnuradityo.crud_room_db.ui.common.DataListListener;
 import com.mmnuradityo.crud_room_db.R;
-import com.mmnuradityo.crud_room_db.database.Mahasiswa;
+import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
 
 import java.util.List;
 
