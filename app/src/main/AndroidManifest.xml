@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.TambahDanUbahDataActivity"
+            android:name=".ui.activity.TambahDanUbahMahasiswaActivity"
             android:launchMode="singleInstance" />
     </application>
 

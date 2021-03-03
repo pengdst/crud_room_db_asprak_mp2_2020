@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="@dimen/normal"
-    tools:context=".ui.activity.TambahDanUbahDataActivity">
+    tools:context=".ui.activity.TambahDanUbahMahasiswaActivity">
 
     <RelativeLayout
         android:layout_width="150dp"

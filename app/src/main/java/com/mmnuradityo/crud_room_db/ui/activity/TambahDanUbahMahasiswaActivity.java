@@ -37,7 +37,7 @@ import com.mmnuradityo.crud_room_db.ui.dialog.CustomDialogImageOptions;
 import java.io.File;
 import java.io.IOException;
 
-public class TambahDanUbahDataActivity extends AppCompatActivity implements View.OnClickListener,
+public class TambahDanUbahMahasiswaActivity extends AppCompatActivity implements View.OnClickListener,
         DialogImageOptionsListener {
 
     public final static String TAG_DATA_INTENT = "data_mahasiswa";
@@ -57,7 +57,7 @@ public class TambahDanUbahDataActivity extends AppCompatActivity implements View
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tambah_dan_ubah_data);
+        setContentView(R.layout.activity_tambah_dan_ubah_mahasiswa);
         dao = CrudRoomApp.getInstance().getDataBase().mahasiswaDao();
 
         if (getIntent() != null) {
@@ -102,8 +102,8 @@ public class TambahDanUbahDataActivity extends AppCompatActivity implements View
                 break;
             case R.id.add_image:
             default:
-                new CustomDialogImageOptions(TambahDanUbahDataActivity.this,
-                        TambahDanUbahDataActivity.this)
+                new CustomDialogImageOptions(TambahDanUbahMahasiswaActivity.this,
+                        TambahDanUbahMahasiswaActivity.this)
                         .show();
                 break;
         }

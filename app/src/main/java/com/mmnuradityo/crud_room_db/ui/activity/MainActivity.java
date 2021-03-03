@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         fabTambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, TambahDanUbahDataActivity.class));
+                startActivity(new Intent(MainActivity.this, TambahDanUbahMahasiswaActivity.class));
             }
         });
 

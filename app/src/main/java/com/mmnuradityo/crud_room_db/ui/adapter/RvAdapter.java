@@ -18,7 +18,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mmnuradityo.crud_room_db.CrudRoomApp;
 import com.mmnuradityo.crud_room_db.R;
 import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
-import com.mmnuradityo.crud_room_db.ui.activity.TambahDanUbahDataActivity;
+import com.mmnuradityo.crud_room_db.ui.activity.TambahDanUbahMahasiswaActivity;
 import com.mmnuradityo.crud_room_db.ui.common.DataListListener;
 
 import java.io.File;
@@ -145,8 +145,8 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
 
             } else if (view.getId() == R.id.item_list) {
 
-                Intent intent = new Intent(itemView.getContext(), TambahDanUbahDataActivity.class);
-                intent.putExtra(TambahDanUbahDataActivity.TAG_DATA_INTENT, data.getId());
+                Intent intent = new Intent(itemView.getContext(), TambahDanUbahMahasiswaActivity.class);
+                intent.putExtra(TambahDanUbahMahasiswaActivity.TAG_DATA_INTENT, data.getId());
                 itemView.getContext().startActivity(intent);
 
             }
