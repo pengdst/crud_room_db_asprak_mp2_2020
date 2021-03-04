@@ -30,6 +30,8 @@ public class CrudRoomApp extends Application {
                         DataBaseMigrations.MIGRATION_2_TO_3,
                         DataBaseMigrations.MIGRATION_3_TO_4
                 )
+                .fallbackToDestructiveMigrationOnDowngrade()
+                .fallbackToDestructiveMigration()
                 .allowMainThreadQueries()
                 .build();
 
