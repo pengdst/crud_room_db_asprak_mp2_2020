@@ -123,7 +123,7 @@ public class MatkulRvAdapter extends RecyclerView.Adapter<MatkulRvAdapter.ViewHo
 
         @Override
         public void onClick(View view) {
-            listener.onItemClick(view, data, getAdapterPosition());
+            if (listener != null) listener.onItemClick(view, data, getAdapterPosition());
         }
     }
 
