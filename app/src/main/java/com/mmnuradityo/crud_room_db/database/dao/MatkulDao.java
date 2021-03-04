@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
+import com.mmnuradityo.crud_room_db.database.models.Matkul;
 
 import java.util.List;
 
@@ -20,17 +20,21 @@ import java.util.List;
 @Dao
 public interface MatkulDao {
     @Query("SELECT * FROM matkul")
-    List<Mahasiswa> getAll();
+    List<Matkul> getAll();
+
+//    @Transaction
+//    @Query("SELECT * FROM matkul")
+//    public List<MatkulWithMahasiswa> getMatkulWithMahasiswa();
 
     @Query("SELECT * FROM matkul WHERE id LIKE :matkulId LIMIT 1")
-    Mahasiswa findById(int matkulId);
+    Matkul findById(int matkulId);
 
     @Update
-    void update(Mahasiswa mahasiswa);
+    void update(Matkul matkul);
 
     @Insert
-    void insert(Mahasiswa mahasiswa);
+    void insert(Matkul matkul);
 
     @Delete
-    void delete(Mahasiswa mahasiswa);
+    void delete(Matkul matkul);
 }
