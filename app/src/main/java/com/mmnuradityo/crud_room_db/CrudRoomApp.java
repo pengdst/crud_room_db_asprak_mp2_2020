@@ -27,7 +27,8 @@ public class CrudRoomApp extends Application {
         dataBase = Room.databaseBuilder(this, AppDataBase.class, "database_mahasiswa")
                 .addMigrations(
                         DataBaseMigrations.MIGRATION_1_TO_2,
-                        DataBaseMigrations.MIGRATION_2_TO_3
+                        DataBaseMigrations.MIGRATION_2_TO_3,
+                        DataBaseMigrations.MIGRATION_3_TO_4
                 )
                 .allowMainThreadQueries()
                 .build();

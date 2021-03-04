@@ -24,4 +24,11 @@ public class DataBaseMigrations {
         }
     };
 
+    public static final Migration MIGRATION_3_TO_4 = new Migration(3, 4) {
+        @Override
+        public void migrate(SupportSQLiteDatabase database) {
+            database.execSQL("CREATE TABLE IF NOT EXISTS MahasiswaMatkulCrossRef (`mahasiswaId` INTEGER NOT NULL, `matkulId` INTEGER NOT NULL, PRIMARY KEY(`mahasiswaId`, `matkulId`))");
+        }
+    };
+
 }
