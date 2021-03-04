@@ -7,6 +7,7 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
+import com.mmnuradityo.crud_room_db.database.models.Matkul;
 
 import java.util.List;
 
