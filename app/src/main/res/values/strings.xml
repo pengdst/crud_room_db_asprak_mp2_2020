@@ -2,4 +2,5 @@
     <string name="app_name">Crud Room DataBase</string>
     <string name="tambah_data">tambah data</string>
     <string name="hapus">Hapus</string>
+    <string name="pilih">Pilih</string>
 </resources>
