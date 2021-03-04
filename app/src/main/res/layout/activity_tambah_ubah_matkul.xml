@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:valueFrom="0.0"
+        android:valueFrom="1.0"
         android:valueTo="22.0"
         android:stepSize="1.0"/>
 
