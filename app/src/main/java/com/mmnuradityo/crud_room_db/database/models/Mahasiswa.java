@@ -2,6 +2,7 @@ package com.mmnuradityo.crud_room_db.database.models;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 /**
@@ -27,6 +28,7 @@ public class Mahasiswa {
     public Mahasiswa() {
     }
 
+    @Ignore
     public Mahasiswa(int id, String nama, String nim, String gambar) {
         this.id = id;
         this.nama = nama;

@@ -2,6 +2,7 @@ package com.mmnuradityo.crud_room_db.database.models;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 /**
@@ -29,6 +30,7 @@ public class Matkul {
     public Matkul() {
     }
 
+    @Ignore
     public Matkul(int id, String nama) {
         this.id = id;
         this.nama = nama;
