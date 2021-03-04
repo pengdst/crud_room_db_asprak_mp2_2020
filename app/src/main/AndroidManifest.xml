@@ -27,8 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.activity.ListMahasiswaActivity" />
+        <activity android:name=".ui.activity.ListMatkulActivity" />
+        <activity android:name=".ui.activity.ListMahasiswaActivity" />
         <activity
             android:name=".ui.activity.TambahDanUbahMahasiswaActivity"
             android:launchMode="singleInstance" />
