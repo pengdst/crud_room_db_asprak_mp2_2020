@@ -11,6 +11,7 @@ import com.mmnuradityo.crud_room_db.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btnMahasiswaMatkul;
     private Button btnMahasiswa;
     private Button btnMatkul;
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnMahasiswaMatkul = findViewById(R.id.btn_mahasiswa_matkul);
         btnMahasiswa = findViewById(R.id.btn_mahasiswa);
         btnMatkul = findViewById(R.id.btn_matkul);
 
@@ -34,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intentMatkul = new Intent(getApplicationContext(), ListMatkulActivity.class);
+                startActivity(intentMatkul);
+            }
+        });
+
+        btnMahasiswaMatkul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMatkul = new Intent(getApplicationContext(), ListMahasiswaDanMatkulActivity.class);
                 startActivity(intentMatkul);
             }
         });
