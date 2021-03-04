@@ -21,7 +21,7 @@ public class Matkul {
     private String nama = "";
 
     @ColumnInfo(name = "sks")
-    private String sks = "";
+    private Float sks = 0F;
 
     @ColumnInfo(name = "semester")
     private String semester = "";
@@ -50,11 +50,11 @@ public class Matkul {
         this.nama = nama;
     }
 
-    public String getSks() {
+    public Float getSks() {
         return sks;
     }
 
-    public void setSks(String sks) {
+    public void setSks(Float sks) {
         this.sks = sks;
     }
 
