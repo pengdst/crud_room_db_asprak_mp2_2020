@@ -3,10 +3,12 @@ package com.mmnuradityo.crud_room_db.database.dao;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
 import com.mmnuradityo.crud_room_db.database.models.Matkul;
+import com.mmnuradityo.crud_room_db.database.relations.MahasiswaMatkulCrossRef;
 
 import java.util.List;
 
@@ -34,6 +36,9 @@ public interface MatkulDao {
 
     @Insert
     void insert(Matkul matkul);
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    void insert(MahasiswaMatkulCrossRef crossRef);
 
     @Delete
     void delete(Matkul matkul);

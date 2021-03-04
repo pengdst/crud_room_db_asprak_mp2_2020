@@ -8,6 +8,7 @@ import androidx.room.Update;
 
 import com.mmnuradityo.crud_room_db.database.models.Mahasiswa;
 import com.mmnuradityo.crud_room_db.database.models.Matkul;
+import com.mmnuradityo.crud_room_db.database.relations.MahasiswaWithMatkul;
 
 import java.util.List;
 
@@ -20,6 +21,9 @@ import java.util.List;
 public interface MahasiswaDao {
     @Query("SELECT * FROM mahasiswa")
     List<Mahasiswa> getAll();
+
+    @Query("SELECT * FROM mahasiswa ")
+    List<MahasiswaWithMatkul> getMahasiswaWithMatkul();
 
     @Query("SELECT * FROM matkul " +
             "JOIN mahasiswamatkulcrossref mref ON mref.matkulId = matkul.id " +
