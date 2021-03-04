@@ -40,7 +40,7 @@ import java.io.IOException;
 public class TambahDanUbahMahasiswaActivity extends AppCompatActivity implements View.OnClickListener,
         DialogImageOptionsListener {
 
-    public final static String TAG_DATA_INTENT = "data_mahasiswa";
+    public final static String TAG_DATA_MAHASISWA = "data_mahasiswa";
     public final static int REQUEST_CAMERA = 101;
     public final static int REQUEST_GALLERY = 202;
     public final static int PICK_CAMERA = 1001;
@@ -61,7 +61,7 @@ public class TambahDanUbahMahasiswaActivity extends AppCompatActivity implements
         dao = CrudRoomApp.getInstance().getDataBase().mahasiswaDao();
 
         if (getIntent() != null) {
-            int id = getIntent().getIntExtra(TAG_DATA_INTENT, 0);
+            int id = getIntent().getIntExtra(TAG_DATA_MAHASISWA, 0);
             mahasiswa = dao.findById(id);
         }
         if (mahasiswa == null) {

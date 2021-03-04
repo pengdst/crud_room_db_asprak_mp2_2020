@@ -146,7 +146,7 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
             } else if (view.getId() == R.id.item_list) {
 
                 Intent intent = new Intent(itemView.getContext(), TambahDanUbahMahasiswaActivity.class);
-                intent.putExtra(TambahDanUbahMahasiswaActivity.TAG_DATA_INTENT, data.getId());
+                intent.putExtra(TambahDanUbahMahasiswaActivity.TAG_DATA_MAHASISWA, data.getId());
                 itemView.getContext().startActivity(intent);
 
             }
