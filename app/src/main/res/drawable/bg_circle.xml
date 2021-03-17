@@ -8,7 +8,7 @@
         android:right="@dimen/small"
         android:top="@dimen/small" />
 
-    <solid android:color="@color/colorAccent" />
+    <solid android:color="@color/colorSecondary" />
 
     <size
         android:width="40dp"

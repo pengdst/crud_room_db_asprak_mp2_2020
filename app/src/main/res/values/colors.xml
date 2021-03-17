@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="colorGray">#6D6D6D</color>
+    <color name="purple_200">#9c47ff</color>
+    <color name="purple_500">#6002ee</color>
+    <color name="purple_700">#0000ba</color>
+    <color name="teal_200">#80cbc4</color>
+    <color name="teal_700">#00796b</color>
+
+    <color name="gray">#6D6D6D</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Theme brand color -->
+    <color name="colorPrimary">?attr/colorPrimary</color>
+    <color name="colorPrimaryVariant">?attr/colorPrimaryVariant</color>
+    <color name="colorSecondary">?attr/colorSecondary</color>
+    <color name="colorSecondaryVariant">?attr/colorSecondaryVariant</color>
+
+    <color name="colorBackground">?attr/colorBackgroundFloating</color>
+    <color name="colorSurface">?attr/colorSurface</color>
+    <color name="colorError">?attr/colorError</color>
+
+    <color name="colorOnPrimary">?attr/colorOnPrimary</color>
+    <color name="colorOnSecondary">?attr/colorOnSecondary</color>
+    <color name="colorOnBackground">?attr/colorOnBackground</color>
+    <color name="colorOnSurface">?attr/colorOnSurface</color>
+    <color name="colorOnError">?attr/colorOnError</color>
+    <!-- End Theme brand color -->
+
+    <color name="colorSecondaryLight">#b2fef7</color>
+    <color name="colorSecondaryDark">#4f9a94</color>
+
+    <!-- Text color -->
+    <color name="colorTextPrimary">@color/white</color>
+    <color name="colorTextSecondary">@color/black</color>
+    <!-- End Text color -->
+
 </resources>
