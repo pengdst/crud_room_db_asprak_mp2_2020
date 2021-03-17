@@ -35,4 +35,9 @@
     <color name="colorTextSecondary">@color/black</color>
     <!-- End Text color -->
 
+    <!-- Button color-->
+    <color name="fabColor">@color/purple_500</color>
+    <color name="fabIconColor">@color/white</color>
+    <!-- End Button color-->
+
 </resources>
